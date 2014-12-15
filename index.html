@@ -8,52 +8,81 @@
 		 <link href="lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
 		 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 		 <title>
-			Web App
+			Bruno et les zombies !
 		 </title>
 	</head>
 	<body>
+
+	<form role="form" class="form">
+		<div class="titreForm">CREATION D'UN SURVIVANT</div>
+		<div class="col-md-6">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Nom</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1">
+		 	</div>
+		</div>
+	  	<div class="col-md-6">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Prénom</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1">
+		 	</div>
+		</div>
+
+		<div class="col-md-3">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Sexe</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1">
+		 	</div>
+		</div>
+	  	<div class="col-md-3 ">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Age</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1">
+		 	</div>
+		</div>
+		<div class="col-md-3 ">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Taille (cm)</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1">
+		 	</div>
+		</div>
+		<div class="col-md-3 ">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Métier</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1">
+		 	</div>
+		</div>
+		<div class="col-md-12 ">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Liste de traits particuliers</label>
+			    <textarea class="form-control" rows="3"></textarea>
+			    <p class="help-block">Mettre une "," entre chaque trait !</p>
+		 	</div>
+		</div>
+
+		<div class="col-md-12 ">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Background</label>
+			    <textarea class="form-control" rows="3"></textarea>
+			    <p class="help-block">8 lignes max !</p>
+		 	</div>
+		</div>
+		
+		<div class="col-md-9 ">
+			 <div class="form-group">
+			    <label for="exampleInputFile">Image du personnage</label>
+			    <input type="file" id="exampleInputFile">
+			    <p class="help-block">Largeur minimum de 150px</p>
+			 </div>
+		</div>
+		<div class="col-md-3 ">
+			<button type="submit" class="btn btn-success" style="margin-top:40px;width:110px;height:40px;">Valider</button>
+		</div>
+		 
+
+
+	</form>
 	
-	<div class="row">
-		<section class="header">
-			<div class="col-md-9">
-				
-			</div>
-			<div class="col-md-3 login">
-				<button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#myModal">Inscription</button>
-				<button type="button" class="btn btn-primary btn">Connexion</button>
-			</div>
-		</section>
-	</div>
-	<div class="row">
-		<section class="center">
-			
-		</section>
-	</div>
-	<div class="row">
-		<section class="footer">
-			
-		</section>
-	</div>
-
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-	      </div>
-	      <div class="modal-body">
-	        ...
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-	<script src="lib/jquery/jquery.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.js"></script>
 	<script src="js/script.js"></script>
 	</body>
