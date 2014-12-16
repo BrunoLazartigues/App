@@ -4,8 +4,8 @@
 	<head>
 		 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		 <meta http-equiv="Content-Language" content="fr" />
-		 <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
-		 <link href="lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 		 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 		 <title>
 			Bruno et les zombies !
@@ -13,76 +13,100 @@
 	</head>
 	<body>
 
-	<form role="form" class="form">
-		<div class="titreForm">CREATION D'UN SURVIVANT</div>
-		<div class="col-md-6">
-			<div class="form-group">
-			    <label for="exampleInputEmail1">Nom</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1">
-		 	</div>
-		</div>
-	  	<div class="col-md-6">
-			<div class="form-group">
-			    <label for="exampleInputEmail1">Prénom</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1">
-		 	</div>
-		</div>
-
-		<div class="col-md-3">
-			<div class="form-group">
-			    <label for="exampleInputEmail1">Sexe</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1">
-		 	</div>
-		</div>
-	  	<div class="col-md-3 ">
-			<div class="form-group">
-			    <label for="exampleInputEmail1">Age</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1">
-		 	</div>
-		</div>
-		<div class="col-md-3 ">
-			<div class="form-group">
-			    <label for="exampleInputEmail1">Taille (cm)</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1">
-		 	</div>
-		</div>
-		<div class="col-md-3 ">
-			<div class="form-group">
-			    <label for="exampleInputEmail1">Métier</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1">
-		 	</div>
-		</div>
-		<div class="col-md-12 ">
-			<div class="form-group">
-			    <label for="exampleInputEmail1">Liste de traits particuliers</label>
-			    <textarea class="form-control" rows="3"></textarea>
-			    <p class="help-block">Mettre une "," entre chaque trait !</p>
-		 	</div>
-		</div>
-
-		<div class="col-md-12 ">
-			<div class="form-group">
-			    <label for="exampleInputEmail1">Background</label>
-			    <textarea class="form-control" rows="3"></textarea>
-			    <p class="help-block">8 lignes max !</p>
-		 	</div>
-		</div>
-		
-		<div class="col-md-7 ">
-			 <div class="form-group">
-			    <label for="exampleInputFile">Image du personnage</label>
-			    <input type="file" id="exampleInputFile">
-			    <p class="help-block">Largeur minimum de 150px</p>
-			 </div>
-		</div>
-		<div class="col-md-5 ">
-			<button type="submit" class="btn btn-success" style="height: 65px;margin-right: 50px;margin-top: 9px;width: 185px;">Valider</button>
-		</div>
-		 
-
-
-	</form>
 	
+
+	<div class="formPage">
+		<div class="titre">LES PAS ENCORE MORT</div>
+		<div class="contentPlayers">
+
+			<button class="col-md-4 playerWindow" data-toggle="modal" data-target="#modalPlayer1">
+				<img src="img/bruno.jpg" alt="Bruno" class="imgPerso" />
+				<span class="labelPerso">Bruno Lazartigues</span>
+			</button>
+			<button class="col-md-4 playerWindow" data-toggle="modal" data-target="#modalPlayer">
+				<img src="img/no-photo.png" alt="Bruno" class="imgPerso" />
+				<span class="labelPerso">Inconnu</span>
+			</button>
+			<button class="col-md-4 playerWindow" data-toggle="modal" data-target="#modalPlayer">
+				<img src="img/no-photo.png" alt="Bruno" class="imgPerso" />
+				<span class="labelPerso">Inconnu</span>
+			</button>
+			<button class="col-md-4 playerWindow" data-toggle="modal" data-target="#modalPlayer">
+				<img src="img/no-photo.png" alt="Bruno" class="imgPerso" />
+				<span class="labelPerso">Inconnu</span>
+			</button>
+			<button class="col-md-4 playerWindow" data-toggle="modal" data-target="#modalPlayer">
+				<img src="img/no-photo.png" alt="Bruno" class="imgPerso" />
+				<span class="labelPerso">Inconnu</span>
+			</button>
+			<button class="col-md-4 playerWindow" data-toggle="modal" data-target="#modalPlayer">
+				<img src="img/no-photo.png" alt="Bruno" class="imgPerso" />
+				<span class="labelPerso">Inconnu</span>
+			</button>
+			<button class="col-md-4 playerWindow" data-toggle="modal" data-target="#modalPlayer">
+				<img src="img/no-photo.png" alt="Bruno" class="imgPerso" />
+				<span class="labelPerso">Inconnu</span>
+			</button>
+			<button class="col-md-4 playerWindow" data-toggle="modal" data-target="#modalPlayer">
+				<img src="img/no-photo.png" alt="Bruno" class="imgPerso" />
+				<span class="labelPerso">Inconnu</span>
+			</button>
+			<button class="col-md-4 playerWindow" data-toggle="modal" data-target="#modalPlayer">
+				<img src="img/no-photo.png" alt="Bruno" class="imgPerso" />
+				<span class="labelPerso">Inconnu</span>
+			</button>
+
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="modalPlayer1" tabindex="-1" role="dialog" aria-labelledby="modalPlayer1Label" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content container paper" style="border-radius:0">
+	      <div class="modal-body" style="padding:5px;">
+	        	<div class="tape"></div>
+			<div class="tromboneInt"></div>
+			<div class="red-line first"></div>
+			<div class="red-line"></div>
+			<img src="img/bruno.jpg" alt="Bruno" class="imgPerso" />
+			<ul id="lines">
+				<li></li>
+				<li class="nom">NOM : Lazartigues</li>
+				<li class="prenom">PRENOM : Bruno</li>
+				<li class="sexe">SEXE : Homme</li>
+				<li class="age">AGE : 25 ans</li>
+				<li class="taille">TAILLE : 185cm</li>
+				<li class="metier">MÉTIER : Ingénieur informatique</li>
+				<li></li>
+				<li class="caracteristiques titre">CARACTÉRISTIQUES :</li>
+				<li class="force">FORCE : 10</li>
+				<li class="dexterite">DEXTÉRITÉ : 10</li>
+				<li class="intelligence">INTELLIGENCE : 12</li>
+				<li class="charisme">CHARISME : 9</li>
+				<li></li>
+				<li class="competences titre">COMPÉTENCES :</li>
+				<li class="competenceList">Course à pied, &nbsp;Combat médiéval, &nbsp;Programmation, &nbsp;Bon sens, &nbsp; Organisé, &nbsp;Conduite, &nbsp;Pragmatique</li>
+				<li></li>
+				<li></li>
+				<li class="background titre">BACKGROUND :</li>
+				<li class="backgroundListe">C'est fou ce que l'avenir nous réserve je trouve. Honnêtement ce matin aprés m'être levé, comment aurais-je pu me douter qu'en rentrant du boulot je serais en trainer de défoncer la boîte crânienne d'une vieille à coups de chaîne de vélo ? Enfin bon, c'est sa faute à cette morue elle avait qu'a pas essayer de me bouffer aprés tout.Je n'ai aucune idée de ce qui se passe mais heureusement je suis à vélo et j'arrive à les distancer pour le moment. Mieux vaut essayer de retrouver les collègues pour voir ce qu'on peut faire pour la suite.</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="left-shadow"></div>
+			<div class="right-shadow"></div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+		 
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.js"></script>
 	<script src="js/script.js"></script>
 	</body>

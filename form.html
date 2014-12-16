@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		 <meta http-equiv="Content-Language" content="fr" />
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+		 <link href="css/style.css" rel="stylesheet" type="text/css"/>
+		 <title>
+			Bruno et les zombies !
+		 </title>
+	</head>
+	<body>
+
+	
+
+	<div class="formPage">
+		<div class="centerButton">
+			<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#modalCreate" style="margin-lef">
+			 CREATION D'UN SURVIVANT
+			</button>
+		</div>
+	</div>
+
+
+
+	<div class="modal fade" id="modalCreate" tabindex="-1" role="dialog" aria-labelledby="modalCreateLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content form">
+	      <div class="modal-body" style="padding:5px;">
+	        	<div class="titreForm">CREATION D'UN SURVIVANT</div>
+		<div class="col-md-6">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Nom</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1">
+		 	</div>
+		</div>
+	  	<div class="col-md-6">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Prénom</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1">
+		 	</div>
+		</div>
+
+		<div class="col-md-3">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Sexe</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1">
+		 	</div>
+		</div>
+	  	<div class="col-md-3 ">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Age</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1">
+		 	</div>
+		</div>
+		<div class="col-md-3 ">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Taille (cm)</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1">
+		 	</div>
+		</div>
+		<div class="col-md-3 ">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Métier</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1">
+		 	</div>
+		</div>
+		<div class="col-md-12 ">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Liste de traits particuliers</label>
+			    <textarea class="form-control" rows="3"></textarea>
+			    <p class="help-block">Mettre une "," entre chaque trait !</p>
+		 	</div>
+		</div>
+
+		<div class="col-md-12 ">
+			<div class="form-group">
+			    <label for="exampleInputEmail1">Background</label>
+			    <textarea class="form-control" rows="3"></textarea>
+			    <p class="help-block">8 lignes max !</p>
+		 	</div>
+		</div>
+		
+		<div class="col-md-7 ">
+			 <div class="form-group">
+			    <label for="exampleInputFile">Image du personnage</label>
+			    <input type="file" id="exampleInputFile">
+			    <p class="help-block">Largeur minimum de 150px</p>
+			 </div>
+		</div>
+		<div class="col-md-5 ">
+			<button type="submit" class="btn btn-success boutonValid" style="">Valider</button>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="js/script.js"></script>
+	</body>
+</html>

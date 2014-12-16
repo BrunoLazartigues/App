@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Zombie";
+  src: url(../font/ZOMBIE.TTF) format("truetype");
+}
+@font-face {
+  font-family: "vicioushunger";
+  src: url(../font/vicioushunger.ttf) format("truetype");
+}
+
+
 html, body, div, span, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, font, img, ul, li {
 	margin: 0;
@@ -14,23 +24,23 @@ ul {
 body {
 	background-image: url("../img/background.jpg");
 	background-size: 100%;
-	/*background:url(img/bg.jpg) repeat scroll 0 0;*/
 }
 #container {
 	width:600px;
 	margin:0 auto;
 	padding-top:100px;
+	padding-bottom:100px;
 
 }
 .paper {
 	position:relative;
 	width:600px;
-	height:800px;
+	min-height:800px;
 	background-color:#faf8e5;
 	border:1px solid #e3e3e3;
 }
 .red-line {
-	height:800px;
+	min-height:900px;
 	width:1px;
 	background-color:#ef8b8b;
 	float:left;
@@ -122,9 +132,10 @@ ul#lines li {
 
 img.imgPerso {
 	float:right;
-	margin:-1px 20px 0 0;
+	margin:-1px 20px 5px 0;
 	box-shadow: -3px 3px 5px #333;
 	width:150px;
+	height:195px;
 }
 
 .titre {
@@ -134,12 +145,13 @@ img.imgPerso {
 .form {
 	background-color: #333;
 	width:600px;
-	height:660px;
+	min-height:660px;
 	margin-left: auto;
 	margin-right: auto;
 	padding:20px;
 	border-radius: 20px;
 	margin-top: 100px;
+	margin-bottom: 100px;
 	box-shadow: 0px 2px 8px #333;
 	border: 2px solid grey;
 	color: white;
@@ -150,4 +162,65 @@ img.imgPerso {
 	text-align: center;
 	margin-bottom: 20px;
 	font-weight: bold;
+}
+
+.boutonValid {
+	height: 65px;
+	margin-right: 50px;
+	font-size: 25px;
+	width: 185px;
+
+}
+
+.centerButton {
+	width:280px;
+	margin: 0 auto;
+}
+
+.formPage {
+	background-color: #333;
+	width:700px;
+	min-height:750px;
+	margin-left: auto;
+	margin-right: auto;
+	padding:20px;
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	box-shadow: 0px 2px 8px #333;
+	border: 2px solid #520000;
+	color: white;
+}
+
+.titre {
+	font-size:48px;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Zombie";
+	margin-bottom:15px;
+	color:#650000;
+}
+
+.contentPlayers {
+	min-height :730px;
+	width:660px;
+	border:none;
+	margin:5px auto 0 auto;
+
+}
+
+.contentPlayers .col-md-4 {
+	margin: 0px;
+	margin-bottom: 20px;
+}
+
+.playerWindow {
+	background: none;
+	border:none;
+}
+
+.labelPerso {
+	font-family:"vicioushunger";
+	font-size:24px;
+
 }
